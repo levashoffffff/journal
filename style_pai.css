@@ -424,6 +424,7 @@ button {display: none; }
 	flex-wrap: wrap;
 	justify-content: right;
 	align-items: center;
+	position: relative;
 }
 
 .search-question {
@@ -461,6 +462,21 @@ button {display: none; }
 .error_block {
 	display: block;
 }
+
+button.micro {
+	position: absolute;
+	top: 3px;
+	right: 85px;
+	bottom: 0;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	width: 3rem;
+	text-align: center;
+	font-size: 1.3rem;
+	cursor: pointer;
+	color: #333;
+  }
 
 
 
