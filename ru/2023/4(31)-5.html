@@ -1,0 +1,310 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>4(31)'2023 ПРИМЕНЕНИЕ СТАТИСТИЧЕСКИХ МЕТОДОВ, КЛАСТЕРНОГО АНАЛИЗА И НЕЙРОСЕТЕВЫХ ТЕХНОЛОГИЙ ПРИ ПРОГНОЗИРОВАНИИ ЗАКУПОЧНЫХ ЦЕН ЛЕКАРСТВ</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<meta name = "description" content = "Проблемы искусственного интеллекта №2023'4(31)">
+ 	<meta name="Keywords" content="Проблемы искусственного интеллекта №2023'4(31), «Проблемы искусственного интеллекта», международный рецензируемый научно-теоретический журнал, ДНР, научный журнал, Государственное учреждение «Институт проблем искусственного интеллекта», ГУ ИПИИ"> 
+
+ 	
+ 	<meta name = "robots" content = "index,follow">
+	
+	<link href="../../style_pai.css" rel="stylesheet" type="text/css">	
+	<link rel="SHORTCUT ICON" href="../../image_pai/favicon.ico" type="image/x-icon">	
+
+    <script src="../../javascript.js"></script>
+
+
+
+
+
+<link rel="schema.DC" href="https://purl.org/dc/elements/1.1/"/>
+<meta name="keywords" content="нейронная сеть, LSTM, закупки, прогнозирование, метод прогноза, точность прогноза, neural network, LSTM, procurement, forecasting, forecast method, forecast accuracy"/>
+<meta name="description" content="В статье рассмотрена проблема планирования закупок лекарственных средств аптечной сети. При определении оптимальной закупочной цены возникает необходимость в прогнозировании цен по историческому массиву данных прайс-листов. Проанализированы традиционные статистические подходы к прогнозированию, а также методы на основе нейронной сети. Реализованы четыре метода: метод скользящего среднего; метод случайного леса; метод K-ближайших соседей; нейронная сеть с архитектурой LSTM. На основании ряда метрик произведена оценка качества прогноза тестируемых методов. Проведенные эксперименты показали высокую точность прогнозирования."/>
+<meta name="DC.Subject" content="нейронная сеть"/>
+<meta name="DC.Subject" content="LSTM"/>
+<meta name="DC.Subject" content="закупки"/>
+<meta name="DC.Subject" content="прогнозирование"/>
+<meta name="DC." content="метод прогноза"/>
+<meta name="DC.Subject" content="точность прогноза"/>
+<meta name="DC.Subject" content="neural network"/>
+<meta name="DC.Subject" content="LSTM"/>
+<meta name="DC.Subject" content="procurement"/>
+<meta name="DC.Subject" content="forecasting"/>
+<meta name="DC.Subject" content="forecast method"/>
+<meta name="DC.Subject" content="forecast accuracy"/>
+<meta name="DC.Creator.PersonalName" xml="lang=&quot;ru&quot;" content="Андриевская, Н.К."/>
+<meta name="DC.Creator.PersonalName" xml="lang=&quot;ru&quot;" content="Мартыненко, Т.В."/>
+<meta name="DC.Creator.PersonalName" xml="lang=&quot;ru&quot;" content="Васяева, Т.А."/>
+<meta name="DC.Creator.PersonalName" xml="lang=&quot;en&quot;" content="Andrievskaya, N."/>
+<meta name="DC.Creator.PersonalName" xml="lang=&quot;en&quot;" content="Martynenko, T."/>
+<meta name="DC.Creator.PersonalName" xml="lang=&quot;en&quot;" content="Vasyaeva, T."/>
+<meta name="DC.Description" xml="lang=&quot;ru&quot;" content="В статье рассмотрена проблема планирования закупок лекарственных средств аптечной сети. При определении оптимальной закупочной цены возникает необходимость в прогнозировании цен по историческому массиву данных прайс-листов. Проанализированы традиционные статистические подходы к прогнозированию, а также методы на основе нейронной сети. Реализованы четыре метода: метод скользящего среднего; метод случайного леса; метод K-ближайших соседей; нейронная сеть с архитектурой LSTM. На основании ряда метрик произведена оценка качества прогноза тестируемых методов. Проведенные эксперименты показали высокую точность прогнозирования."/>
+<meta name="DC.Description" xml="lang=&quot;en&quot;" content="The article discusses the problem of planning the procurement of medicines in a pharmacy chain. When determining the optimal purchase price, there is a need to forecast prices using a historical array of price list data. Traditional statistical approaches to forecasting, as well as methods based on a neural network, are analyzed. Four methods are implemented: moving average method; random forest method; K-nearest neighbors’ method; neural network with LSTM architecture. Based on a number of metrics, the quality of the forecast of the tested methods was assessed. The experiments performed showed high prediction accuracy."/>
+<meta name="DC.Source" content="Проблемы искусственного интеллекта"/>
+<meta name="DC.Title" xml="lang=&quot;ru&quot;" content="ПРИМЕНЕНИЕ СТАТИСТИЧЕСКИХ МЕТОДОВ, КЛАСТЕРНОГО АНАЛИЗА И НЕЙРОСЕТЕВЫХ ТЕХНОЛОГИЙ ПРИ ПРОГНОЗИРОВАНИИ ЗАКУПОЧНЫХ ЦЕН ЛЕКАРСТВ"/>
+<meta name="DC.Title" xml="lang=&quot;en&quot;" content="APPLICATION OF STATISTICAL METHODS, CLUSTER ANALYSIS AND NEURAL NETWORK TECHNOLOGIES IN FORECASTING PROCUREMENT PRICES FOR MEDICINES"/>
+<meta name="DC.Date.issued" content="2024-02-21"/>
+<meta name="DC.Identifier.pageNumber" content="41-55"/>
+<meta name="DC.Identifier.DOI" content="10.34757/2413-7383.2023.31.4.005"/>
+<meta name="DC.Identifier.URI" content="http://paijournal.guiaidn.ru/ru/news.html"/>
+<meta name="DC.Identifier.Rights" content=""/>
+<meta name="DC.Identifier.Rights" content=""/>
+<meta name="DC.Source.ISSN" content="2413-7383"/>
+<meta name="citation_title" content="ПРИМЕНЕНИЕ СТАТИСТИЧЕСКИХ МЕТОДОВ, КЛАСТЕРНОГО АНАЛИЗА И НЕЙРОСЕТЕВЫХ ТЕХНОЛОГИЙ ПРИ ПРОГНОЗИРОВАНИИ ЗАКУПОЧНЫХ ЦЕН ЛЕКАРСТВ"/>
+<meta name="citation_publication_date" content="2024/02/21"/>
+<meta name="citation_journal_title" content="Проблемы искусственного интеллекта"/>
+<meta name="citation_doi" content="10.34757/2413-7383.2023.31.4.005"/>
+<meta name="citation_issn" content="2413-7383"/>
+<meta name="citation_pdf_url" content="http://paijournal.guiaidn.ru/ru/news.html"/>
+<meta name="citation_pages" content="41-55"/>
+<meta name="citation_issue" content="№ 4 (31)"/>
+<meta name="citation_author" content="Андриевская, Н.К."/>
+<meta name="citation_author" content="Мартыненко, Т.В."/>
+<meta name="citation_author" content="Васяева, Т.А."/>
+<meta name="DC.Type" content="Text.Serial.Journal"/>
+
+
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   var z = null;m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(90090525, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/90090525" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+
+<body >
+
+<!-- Rating Mail.ru counter -->
+<script type="text/javascript">
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "3259293", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "topmailru-code");
+</script><noscript><div>
+<img src="https://top-fwz1.mail.ru/counter?id=3259293;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+</div></noscript>
+<!-- //Rating Mail.ru counter -->
+
+
+
+<table  >
+<tr>
+    <td rowspan="3" valign="top" width="200px"  height="225px"><a href="../news.html" ><img src="../../image_pai/logo.jpg"  alt="Логотип" class="logo" border="0"></a></td>
+    <td colspan="2"  align="right"  height="104px" ><img src="../../image_pai/top.jpg"  border="0"  ></td>
+</tr>
+
+<tr>
+<td align="right"  valign="bottom" style="padding: 5px;">
+<a href="4(31)-5.html"  class="language"><img src="../../image_pai/Russia.png" class="imgflag">РУС</a>
+<a href="../../en/2023/4(31)-5.html" class="language"><img src="../../image_pai/United-Kingdom.png" class="imgflag">ENG</a>
+</td>
+
+<td  align="right"    valign="bottom"   height="70px"  border="0">
+	
+	
+</td>
+</tr>
+
+<tr>
+<td  colspan="2" bgcolor="#ffffff">
+<H1>ПРИМЕНЕНИЕ СТАТИСТИЧЕСКИХ МЕТОДОВ, КЛАСТЕРНОГО АНАЛИЗА И НЕЙРОСЕТЕВЫХ ТЕХНОЛОГИЙ ПРИ ПРОГНОЗИРОВАНИИ ЗАКУПОЧНЫХ ЦЕН ЛЕКАРСТВ
+</H1>
+</td>
+</tr>
+
+<tr>
+<td  bgcolor="#04005f"  align="right"  valign="top"   border="0">
+	
+
+	<p class="rmenu">О журнале </p>
+	
+	<a href="../news.html" class="Link menu">Новости  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../aims-and-scope.html" class="Link menu">Цели и сфера  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../founder-and-publisher.html" class="Link menu">Основатель и издатель  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../editorial-board.html" class="Link menu">Редакционная коллегия  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../licensing-terms.html" class="Link menu">Условия лицензирования  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../privacy-statement.html" class="Link menu">Конфиденциальность  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../plagiarism-policy.html" class="Link menu">Отношение к плагиату  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../publication-ethics.html" class="Link menu">Публикационная этика  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../archiving.html" class="Link menu">Политика архивирования <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../subscription.html" class="Link menu">Подписка  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+
+	<br>
+	<br>
+	<p class="rmenu">Для авторов</p>
+	
+	<a href="../instructions.html" class="Link menu">Инструкции для авторов  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../reviewing-process.html" class="Link menu">Процесс рецензирования  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../copyright-notice.html" class="Link menu">Авторские права  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../license-agreement.html" class="Link menu">Договор о передаче прав  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../apc.html" class="Link menu">Редакционные сборы  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<br>
+	<br>	
+
+
+	<p class="rmenu">Архив</p>
+
+	<a href="../archive.html" class="Link menu">Все выпуски  <img src="../../image_pai/marker_on.jpg"  border="0"></a><br>
+	<a href="../search.html" class="Link menu">Поиск  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+
+	<br>
+	<br>
+
+
+	<p class="rmenu">Контакты</p>
+
+	<a href="../contacts.html" class="Link menu">Контакты  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<br>
+	<br>
+
+	
+</td>
+
+
+
+
+
+<td colspan="2" align="justify"    valign="top"  bgcolor="#ffffff">
+
+
+
+
+<p >
+<b>Андриевская Наталия Климовна</b>
+<br>кандидат технических наук
+<br>доцент
+<br>выполняет обязанности заведующего кафедрой «Автоматизированные системы управления» Донецкого национального технического университета. 
+<br>Область научных интересов: онтологическое проектирование, семантические технологии, интеллектуальные методы управления. 
+<br>
+<br>
+<b>Мартыненко Татьяна Владимировна </b>
+<br>кандидат технических наук
+<br>доцент кафедры автоматизированных систем управления Донецкого национального технического университета. 
+<br>Область научных интересов: анализ видеоинформации, машинное обучение, современные методы оптимизации, интеллектуальные методы управления. 
+<br>
+<br>
+<b>Васяева Татьяна Александровна </b>
+<br>кандидат технических наук
+<br>доцент
+<br>декан факультета информационных систем и технологий Донецкого национального технического университета.  
+<br>Область научных интересов: машинное обучение, нейросетевое и эволюционное моделирование, методы и системы искусственного интеллекта. 
+</p>
+
+
+<p>
+<a href="../../download_pai/2023_4/5_Андриевская.pdf" target="_blank"><button>Скачать pdf</button></a></p>
+<p>
+<b>УДК</b> 004.048<br>
+<b>DOI </b><a href="https://search.rads-doi.org/project/14374/object/210541" target="_blank">10.34757/2413-7383.2023.31.4.005</a><br>
+<b>Язык:</b> Русский
+<b>Аннотация: </b>
+В статье рассмотрена проблема планирования закупок лекарственных средств аптечной сети. При определении оптимальной закупочной цены возникает необходимость в прогнозировании цен по историческому массиву данных прайс-листов. Проанализированы традиционные статистические подходы к прогнозированию, а также методы на основе нейронной сети. Реализованы четыре метода: метод скользящего среднего; метод случайного леса;  метод K-ближайших соседей; нейронная сеть с архитектурой LSTM. На основании ряда метрик произведена оценка качества прогноза тестируемых методов. Проведенные эксперименты показали высокую точность прогнозирования
+<br>
+<b>Ключевые слова:</b> 	нейронная сеть, LSTM, закупки, прогнозирование, метод прогноза, точность прогноза.
+</p>
+<p>
+<b>Список литературы:</b>
+<br>1.	Светличная В.А. Использование методов теории принятия решений для выбора оптимальной стратегии при закупке лекарственных средств / В.А. Светличная, Е.А. Шумаева, О.В. Ченгарь, А.В. Андриевская. Экономика строительства и городского хозяйства. 2020. Т. 16. № 1. С. 41-48.
+<br>2.	Золотова И.Ю. Краткосрочное прогнозирование цен на российском оптовом рынке электро-энергии на основе нейронных сетей. Проблемы прогнозирования. 2017. 
+<br>3.	Андриевская, А.В. Экстраполяционные методы прогнозирования закупочных цен лекарств в условиях аптечной сети / А.В. Андриевская, В.О. Вовченко, Н.К. Андриевская. Информатика, управляющие системы, математическое и компьютерное моделирование (ИУСМКМ-2021). Материалы XII Международной научно-технической конференции в рамках VII Международного Научного форума Донецкой Народной Республики к 100-летию ДонНТУ. 2021, 169-175.
+<br>4.	Метод скользящей средней в статистике [Электронный ресурс]. URL: https://www.goodstudents.ru/statistika-zadachi/1144-metod-skolzyashej-srednej.html// (дата обращения: 19.05.2023).
+<br>5.	Feature selection for time-series prediction in case of undetermined estimation. Khmilovyi S., Skobtsov Yu., Vasyaeva T., Andrievskaya N.В сборнике: Biologically Inspired Cognitive Architectures (BICA) for Young Scientists. Proceedings of the First International Early Research Career Enhancement School (FIERCES 2016). Cham, 2016. С. 85-97.
+<br>6.	Хаирова, С.М., Хаиров, Б.Г., Шимохин, А.В.  Методика работы с поставщиками на основе моделирования работы нейронной сети при решении вопросов выбора поставщиков услуг. Фундаментальные исследования. № 7, 2020. 
+<br>7.	Хайрутдинов, М.Р. Применение нейронной сети с обратным распространением и нейронной сети с скрытыми нейронами для прогнозирования потребности в критических запасных частях. Академическая публицистика. 2021. №3.
+<br>8.	Беспалова С.В., Романчук С.М., Ермоленко Т.В., Бондаренко В.И. Построение предсказательных моделей параметров давления воды в водораспределительных сетях с помощью методов машинного обучения. Проблемы искусственного интеллекта. 2019. №2 (13). 
+<br>9.	Сазонтьев, В. В. Прогнозирование цен на услуги и товары с использованием нейронных сетей/ Под общей редакцией: Тихонов А. Н., Азаров В. Н., Аристова У. В., Карасев М. В., Кулагин В. П., Леохин Ю. Л., Львов Б. Г., Титкова Н. С. Научно-техническая конференция студентов, аспирантов и молодых специалистов НИУ ВШЭ. Материалы конференции/ М. : МИЭМ НИУ ВШЭ, 2014. С. 84-85.
+<br>10.	Зюсько, К.Д. Прогноз спроса на товар с помощью нейронных сетей в условиях меняющейся размерности входных данных. Экономика и качество систем связи. 2020. №1.
+<br>11.	 Рубан, О. И. Использование технологии нейросетей в повседневности. Летняя школа по искусственному интеллекту 2019 / Кафедра системных исследований МФТИ, Институт проблем искусственного интеллекта ФИЦ ИУ РАН, Российская ассоциация искусственного интеллекта. 4-7 июля 2019 г. Россия, кампус МФТИ.
+<br>12.	Ступак, А. А. Управление запасами с использованием нейронных сетей. Управление инвестициями и инновациями. 2017. № 3. С. 95-103.
+<br>13.	Бутор, Л. В. Применение искусственных нейронных сетей для прогнозирования закупок = Application of artificial neural networks for procurement forecasting. Инженерная экономика [Электронный ресурс] : сборник материалов международной научно-технической конференции профессорско-преподавательского состава в рамках 20-й Международной научно-технической конференции «Наука – образованию, производству, экономике», 26-28 апреля 2022 / Белорусский национальный технический университет, Машиностроительный факультет ; редкол.: А. В. Плясунков, Т. А. Сахнович ; сост. А. В. Плясунков. Минск : БНТУ, 2022. С. 12-15.
+<br>14.	Использование нейронных сетей в задаче прогнозирования закупок товаров / Д. А. Балавнев, М. Л. Киндулов, Б. Р. Горелов, Т. О. Шергин. Молодой ученый. 2020 № 27 (317). С. 30-32. 
+<br>15.	Stock Prices Dynamics Forecasting with Recurrent Neural Networks / T. Vasyaeva, T. Martynenko, S. Khmilovyi, N. Andrievskaya. Открытые семантические технологии проектирования интеллектуальных систем. 2020. No 4. P. 277-282. 
+<br>16.	Stock prices forecasting with LSTM networks. Vasyaeva T., Martynenko T., Khmilovyi S., Andrievskaya N. Communications in Computer and Information Science. 2019. Т. 1093. С. 59-69.
+<br>17.	Возможности и недостатки использования скользящей средней при выработке прогнозных решений. Приоритетные научные направления: от теории к практике. 2015. №19.
+<br>18.	Труфанова, Т.В. Нещеменко, К.Д. Способы прогнозирования курса валют на основе моделей экспоненциального сглаживания и Хольта. Вестник Амурского государственного университета. Серия: Естественные и экономические науки. 2019. №87. 
+<br>19.	Машинное обучение для начинающих: алгоритм случайного леса (Random Forest) [Электронный ресурс]. URL: https://clck.ru/335YFV// (дата обращения: 19.05.2023).
+<br>20.	Метод ближайших соседей (kNN) [Электронный ресурс]. URL: https://clck.ru/34YodU (дата обращения: 19.05.2023).
+<br>21.	Типы нейронных сетей. Принцип их работы и сфера применения [Электронный ресурс]. URL: https://otus.ru/nest/post/1263 // (дата обращения: 19.05.2023).
+<br>22.	Пустынный, Я.Н. Решение проблемы исчезающего градиента с помощью нейронных сетей долгой краткосрочной памяти. Инновации и инвестиции. 2020. №2. 
+<br>23.	Турунцева Марина Юрьевна Оценка качества прогнозов: простейшие методы. Российское предпринимательство. 2011. №8-1. 
+<br>24.	Коэффициент детерминации (Coefficient of determination) [Электронный ресурс] – URL: https://wiki.loginom.ru/articles/coefficient-of-determination.html // (дата обращения: 19.05.2023).
+<br>25.	Кинякин, В.Н., Милевская, Ю.С. Некоторые предостережения по проверке качества модели регрессии с помощью коэффициента детерминации. Вестник Московского университета МВД России. 2014. №8. 
+<br>26.	Шпаргалка по разновидностям нейронных сетей. Часть первая. Элементарные конфигурации [Электронный ресурс]. URL: https://tproger.ru/translations/neural-network-zoo-1 // (дата обращения: 20.05.2023).
+
+</p>
+
+<p>
+<b>Выпуск: </b>4(31)'2023
+<br>
+<b>Раздел: </b>Математическое моделирование
+<br>
+<b>Как цитировать:</b>
+Андриевская, Н.К. ПРИМЕНЕНИЕ СТАТИСТИЧЕСКИХ МЕТОДОВ, КЛАСТЕРНОГО АНАЛИЗА И НЕЙРОСЕТЕВЫХ ТЕХНОЛОГИЙ ПРИ ПРОГНОЗИРОВАНИИ ЗАКУПОЧНЫХ ЦЕН ЛЕКАРСТВ // Н.К. Андриевская, Т.В. Мартыненко, Т.А. Васяева // Проблемы искусственного интеллекта. - 2023. № 4 (31). - 41-55. - http://search.rads-doi.org/project/14374/object/210541 doi: 10.34757/2413-7383.2023.31.4.005
+</p>
+
+
+
+
+
+<br>
+<p><a href="4(31).html"><button>Назад к выпуску 4(31)'2023</button></a></p>
+<br>
+
+</td>
+
+
+
+</tr>
+
+<tr>
+<td colspan="3"   height="236px"   class="tdbottom">
+<br><img src="../../image_pai/bottom_1.jpg"  border="0">
+<br>
+<p class="footer"><a href="http://guiaidn.ru" target="_blank" class="footer menu">Основатель и издатель: ФГБНУ "Институт проблем искусственного интеллекта"</a></p>
+<p class="footer">Адрес: ДНР 83048, г. Донецк, ул. Артема, дом 118 б </p>
+<p class="footer">Телефон: +7 (856) 311-72-01 </p>
+<p class="footer">Главный редактор: Шелепов В.Ю.</p>
+
+<p class="footer">
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=90090525&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/90090525/3_0_2069A5FF_004985FF_1_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="90090525" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Rating Mail.ru logo -->
+<a href="https://top.mail.ru/jump?from=3259293">
+<img src="https://top-fwz1.mail.ru/counter?id=3259293;t=456;l=1" style="border:0;" height="31" width="88" alt="Top.Mail.Ru" /></a>
+<!-- //Rating Mail.ru logo -->
+</p>
+
+
+<p class="footer">&copy; ФГБНУ "Институт проблем искусственного интеллекта", </li>
+<script>document.write(new Date().getFullYear());</script></p>
+<br>
+</tr>
+
+</table>
+</body >
+</html>

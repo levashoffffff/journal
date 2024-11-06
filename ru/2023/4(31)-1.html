@@ -1,0 +1,269 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>ФУНКЦИОНАЛЬНЫЕ ОСОБЕННОСТИ РЕАЛИЗОВАННЫХ ОНТОЛОГИЧЕСКИХ ПЛАТФОРМ</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<meta name = "description" content = "Проблемы искусственного интеллекта №2023'4(31)">
+ 	<meta name="Keywords" content="Проблемы искусственного интеллекта №2023'3(30), «Проблемы искусственного интеллекта», международный рецензируемый научно-теоретический журнал, ДНР, научный журнал, Государственное учреждение «Институт проблем искусственного интеллекта», ГУ ИПИИ"> 
+
+ 	
+ 	<meta name = "robots" content = "index,follow">
+	
+	<link href="../../style_pai.css" rel="stylesheet" type="text/css">	
+	<link rel="SHORTCUT ICON" href="../../image_pai/favicon.ico" type="image/x-icon">	
+
+    <script src="../../javascript.js"></script>
+
+
+
+<link rel="schema.DC" href="https://purl.org/dc/elements/1.1/"/>
+                                <meta name="keywords" content="онтология, онтологические платформы, ontology, ontological platforms"/>
+                                  <meta name="description" content="В статье приведен анализ инструментов в области построения онтологии. Исследование данной проблемы показало, что на данный момент присутствует малое количество источников, показывающих эффективное использование инструментов в разных задачах, стэках, объем проекта. Результат даст использование данных в комплексном подходе в решении задач онтологического инжиниринга."/>
+                                  <meta name="DC.Subject" content="онтология"/>
+                                  <meta name="DC.Subject" content="онтологические платформы"/>
+                                  <meta name="DC.Subject" content="ontology"/>
+                                  <meta name="DC.Subject" content="ontological platforms"/>
+                                  <meta name="DC.Creator.PersonalName" xml="lang=&quot;ru&quot;" content="Гаркуша, Д.А."/>
+                                  <meta name="DC.Creator.PersonalName" xml="lang=&quot;en&quot;" content="Garkusha, D.A."/>
+                                  <meta name="DC.Description" xml="lang=&quot;ru&quot;" content="В статье приведен анализ инструментов в области построения онтологии. Исследование данной проблемы показало, что на данный момент присутствует малое количество источников, показывающих эффективное использование инструментов в разных задачах, стэках, объем проекта. Результат даст использование данных в комплексном подходе в решении задач онтологического инжиниринга."/>
+                                  <meta name="DC.Description" xml="lang=&quot;en&quot;" content="The article provides an analysis of tools in the field of ontology construction. The study of this problem showed that at the moment there is a small number of sources showing the effective use of tools in different tasks, stacks, and project scope. The result will be the use of data in an integrated approach to solving ontological engineering problems."/>
+                                  <meta name="DC.Source" content="Проблемы искусственного интеллекта"/>
+                                  <meta name="DC.Title" xml="lang=&quot;ru&quot;" content="ФУНКЦИОНАЛЬНЫЕ ОСОБЕННОСТИ РЕАЛИЗОВАННЫХ ОНТОЛОГИЧЕСКИХ ПЛАТФОРМ"/>
+                                  <meta name="DC.Title" xml="lang=&quot;en&quot;" content="FUNCTIONAL FEATURES OF IMPLEMENTED ONTOLOGICAL PLATFORMS"/>
+                                  <meta name="DC.Date.issued" content="2023-12-29"/>
+                                  <meta name="DC.Identifier.pageNumber" content="4-11"/>
+                                  <meta name="DC.Identifier.DOI" content="10.34757/2413-7383.2023.31.4.001"/>
+                                  <meta name="DC.Identifier.URI" content="http://paijournal.guiaidn.ru/ru/2023/4(31).html"/>
+                                  <meta name="DC.Identifier.Rights" content=""/>
+                                  <meta name="DC.Identifier.Rights" content=""/>
+                                  <meta name="DC.Source.ISSN" content="2413-7383"/>
+                                  <meta name="citation_title" content="ФУНКЦИОНАЛЬНЫЕ ОСОБЕННОСТИ РЕАЛИЗОВАННЫХ ОНТОЛОГИЧЕСКИХ ПЛАТФОРМ"/>
+                                  <meta name="citation_publication_date" content="2023/12/29"/>
+                                  <meta name="citation_journal_title" content="Проблемы искусственного интеллекта"/>
+                                  <meta name="citation_doi" content="10.34757/2413-7383.2023.31.4.001"/>
+                                  <meta name="citation_issn" content="2413-7383"/>
+                                  <meta name="citation_pdf_url" content="http://paijournal.guiaidn.ru/ru/2023/4(31).html"/>
+                                  <meta name="citation_pages" content="4-11"/>
+                                  <meta name="citation_issue" content="№ 4 (31)"/>
+                                  <meta name="citation_author" content="Гаркуша, Д.А."/>
+                                  <meta name="DC.Type" content="Text.Serial.Journal"/>
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   var z = null;m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(90090525, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/90090525" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+
+<body >
+
+<!-- Rating Mail.ru counter -->
+<script type="text/javascript">
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "3259293", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "topmailru-code");
+</script><noscript><div>
+<img src="https://top-fwz1.mail.ru/counter?id=3259293;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+</div></noscript>
+<!-- //Rating Mail.ru counter -->
+
+
+
+<table  >
+<tr>
+    <td rowspan="3" valign="top" width="200px"  height="225px"><a href="../news.html" ><img src="../../image_pai/logo.jpg"  alt="Логотип" class="logo" border="0"></a></td>
+    <td colspan="2"  align="right"  height="104px" ><img src="../../image_pai/top.jpg"  border="0"  ></td>
+</tr>
+
+<tr>
+<td align="right"  valign="bottom" style="padding: 5px;">
+<a href="4(31)-1.html"  class="language"><img src="../../image_pai/Russia.png" class="imgflag">РУС</a>
+<a href="../../en/2023/4(31)-1.html" class="language"><img src="../../image_pai/United-Kingdom.png" class="imgflag">ENG</a>
+</td>
+
+<td  align="right"    valign="bottom"   height="70px"  border="0">
+	
+	
+</td>
+</tr>
+
+<tr>
+<td  colspan="2" bgcolor="#ffffff">
+<H1>ФУНКЦИОНАЛЬНЫЕ ОСОБЕННОСТИ РЕАЛИЗОВАННЫХ ОНТОЛОГИЧЕСКИХ ПЛАТФОРМ</H1>
+</td>
+</tr>
+
+<tr>
+<td  bgcolor="#04005f"  align="right"  valign="top"   border="0">
+	
+
+	<p class="rmenu">О журнале </p>
+	
+	<a href="../news.html" class="Link menu">Новости  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../aims-and-scope.html" class="Link menu">Цели и сфера  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../founder-and-publisher.html" class="Link menu">Основатель и издатель  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../editorial-board.html" class="Link menu">Редакционная коллегия  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../licensing-terms.html" class="Link menu">Условия лицензирования  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../privacy-statement.html" class="Link menu">Конфиденциальность  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../plagiarism-policy.html" class="Link menu">Отношение к плагиату  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../publication-ethics.html" class="Link menu">Публикационная этика  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../archiving.html" class="Link menu">Политика архивирования <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../subscription.html" class="Link menu">Подписка  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+
+	<br>
+	<br>
+	<p class="rmenu">Для авторов</p>
+	
+	<a href="../instructions.html" class="Link menu">Инструкции для авторов  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../reviewing-process.html" class="Link menu">Процесс рецензирования  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../copyright-notice.html" class="Link menu">Авторские права  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../license-agreement.html" class="Link menu">Договор о передаче прав  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../apc.html" class="Link menu">Редакционные сборы  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<br>
+	<br>	
+
+
+	<p class="rmenu">Архив</p>
+
+	<a href="../archive.html" class="Link menu">Все выпуски  <img src="../../image_pai/marker_on.jpg"  border="0"></a><br>
+	<a href="../search.html" class="Link menu">Поиск  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+
+	<br>
+	<br>
+
+
+	<p class="rmenu">Контакты</p>
+
+	<a href="../contacts.html" class="Link menu">Контакты  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<br>
+	<br>
+
+	
+</td>
+
+
+
+
+
+<td colspan="2" align="justify"    valign="top"  bgcolor="#ffffff">
+
+
+
+
+<p ><b>Гаркуша Дмитрий Алексеевич</b> 
+<br>аспирант отдела системного анализа и интеллектуальных систем 
+<br>Федеральное государственное бюджетное научное учреждение «Институт проблем искусственного интеллекта», г. Донецк
+<br>Область научных интересов: онтологии, системы искусственного интеллекта
+<p>
+
+<a href="../../download_pai/2023_4/1_Гаркуша.pdf" target="_blank"><button>Скачать pdf</button></a></p>
+<p>
+<b>УДК</b> 004.89:004.93<br>
+<b>DOI</b> <a HREF="https://search.rads-doi.org/project/14374/object/210537">10.34757/2413-7383.2023.31.4.001</a><br>
+<b>Язык:</b> Русский<br>
+<b>Аннотация: </b>
+В статье приведен анализ инструментов в области построения онтологии. Исследование данной проблемы показало, что на данный момент присутствует малое 
+количество источников, показывающих эффективное использование инструментов в разных задачах, стэках, объем проекта. Результат даст использование данных в комплексном подходе в решении задач онтологического инжиниринга. 
+<br>
+<b>Ключевые слова:</b> 	онтология, онтологические платформы.
+</p>
+<p>
+<b>Список литературы:</b>
+<br>1.	Дорохина Г.В. Формализованные онтологии и задачи построения компьютерной информационной технологии цифрового сбора, обработки и анализа данный. Искусственный интеллект: теорети¬че¬ские аспекты, практическое применение : материалы Донецкого международного научного круглого стола.  Донецк: ГУ ИПИИ, 2020. С. 229–234
+<br>2.	Дорохина Г. В. Требования к информационной технологии цифрового сбора, обработки и анализа данных. Проблемы искусственного интеллекта. 2020. № 4 (19). C. 4–9.
+<br>3.	Муромцев Д. Индустриальные графы знаний – интеллектуальное ядро цифровой экономики [Текст] / Дмитрий Муромцев, Алексей Романов, Дмитрий Волчек. Control Engineering Россия. № 5 (83). октябрь 2019. С. 23–39.
+<br>4.	Охтилев П.А. Алгоритмы и онтологические модели информационно-аналитической поддержки процессов создания и применения космических средств [Текст]: Диссертация на соискание ученой степени кандидата технических наук. Специальность 05.13.01 – Системный анализ, управление и обработка информации (технические системы) Дата защиты: 19.12.2019 г./ Петр Алексеевич Охтилев.  Санкт-Петербург, 2019. 408 с.
+<br>5.	Bruno Borlini Duarte An Ontology-based Reference Model for the Software Systems Domain with a focus on Requirements Traceability/ Bruno Borlini Duarte. – Vitória, ES, 2022- 149 p.: il.; 30 cm. (дата обращения: 10.10.2023)
+<br>6.	ГОСТ Р 59798-2021. Информационные технологии. Онтологии высшего уровня (TLO). Часть 2. Базисная формальная онтология (BFO): национальный стандарт Российской Федерации: дата введения в действие: 30.04.2022 / Федеральное агентство по техническому регулированию и метрологии. Изд. официальное. Москва Российский институт стандартизации 2021. 36 с.
+<br>7.	Литейное производство открытых биологических и биомедицинских онтологий. Литейный завод ОБО [просмотрено 2019-11-1], доступно по адресу http://obofoundry.org (OPEN BIOLOGICAL AND BIOMEDICAL ONTOLOGIES FOUNDRY. The OBO Foundry)
+<br>8.	Гаркуша, Д. А. Анализ онтологических платформ. Искусственный интеллект: теоретические аспекты, практическое применение : материалы Донецкого международного научного круглого стола. Донецк : ФГБНУ «ИПИИ», 2023. 252 с. С. 37–40.
+<br>9.	Криводубский, О. А. Математические модели в системах управления. Искусственный интеллект: теоретические аспекты, практическое применение : материалы Донецкого международного научного круглого стола. Донецк : ФГБНУ «ИПИИ», 2023. 252 с. С. 111–113.
+<br>10.	Gruber T.R. The role of common ontology in achieving sharable, reusable knowledge bases. Principles of Knowledge Representation and Reasoning. Proceedings of the Second International Conference. J.A. Allen, R. Fikes, E. Sandewell – eds. MorganKaufmann, 1991, 601-602.
+<br>11.	Загорулько Ю.А. Современные средства формализации семантики областей знаний на основе он-то¬логий. Информационные и математические технологии в науке и управлении. 2018. № 3 (11). С. 27 36. DOI:10.25729/2413-0133-2018-3-03.
+<br>12.	JenaApiDocumetion [Электронный ресурс].  Режим доступа: https://jena.apache.org/documentation/ontology/ (Дата обращения: 18.06.20.23
+<br>13.	Родионцев, Н.Н. Анализ применения онтологий при разработке информационно-коммуникационных систем нефтегазовой отрасли. Московский экономический журнал. 2019. № 2. C. 695–699. 
+<br>14.	Семерханов, И.А. Методы и алгоритмы автоматизированной интеграции информационных ресурсов на основе онтологического подхода. Диссертация на соискание ученой степени кандидата технических наук. СПб.: Питер, 2014. С. 137.
+<br>15.	Горшков, С.В. Введение в онтологическое моделирование. ООО «ТриниДата», 2014-2018.– 144 с.
+<br>16.	Трассировка сервисов в мобильной транспортной сети. Как мы пришли к графовой БД Neo4j / Сураев Д.В. [Режим доступа] https://habr.com/ru/post/517254/ (Дата обращения: 18.06.2023).
+<br>17.	Корпоративные автоматизированные системы на основе онтологических моделей: книга рецептов – изд. ООО «ТриниДата»  2020  81с.
+<br>18.	Онтологическое моделирование предприятий: методы и технологии : монография ; [отв. ред. С. В. Гор¬ш¬ков] ; предисл. С. В. Горшкова. Екатеринбург : Изд-во Урал. ун-та, 2019. 234 с.
+<br>19.	DBengines [Электронный ресурс]. Режим доступа: https://db-engines.com/en/system/Stardog (Дата обращения: 20.06.2023). 
+<br>20.	DBengines [Электронный ресурс]. Режим доступа: https://db-engines.com/en/system/MarkLogic (Дата обращения: 20.06.2023).
+<br>21.	Stardog [Электронный ресурс]. Режим доступа: https://docs.stardog.com/ (Дата обращения: 21.06.2023).
+</p>
+
+<p>
+<b>Выпуск: </b>4(31)'2023
+<br>
+<b>Раздел: </b>Информатика, вычислительная техника и управление
+<br>
+<b>Как цитировать:</b>
+Гаркуша, Д.А. ФУНКЦИОНАЛЬНЫЕ ОСОБЕННОСТИ РЕАЛИЗОВАННЫХ ОНТОЛОГИЧЕСКИХ ПЛАТФОРМ // Д.А. Гаркуша // Проблемы искусственного интеллекта. - 2023. № 4 (31). - 4-11. - http://search.rads-doi.org/project/14374/object/210537 doi: 10.34757/2413-7383.2023.31.4.001
+</p>
+
+
+
+
+
+<br>
+<p><a href="4(31).html"><button>Назад к выпуску 4(31)'2023</button></a></p>
+<br>
+
+</td>
+
+
+
+</tr>
+
+<tr>
+<td colspan="3"   height="236px"   class="tdbottom">
+<br><img src="../../image_pai/bottom_1.jpg"  border="0">
+<br>
+<p class="footer"><a href="http://guiaidn.ru" target="_blank" class="footer menu">Основатель и издатель: ФГБНУ "Институт проблем искусственного интеллекта"</a></p>
+<p class="footer">Адрес: ДНР 83048, г. Донецк, ул. Артема, дом 118 б </p>
+<p class="footer">Телефон: +7 (856) 311-72-01 </p>
+<p class="footer">Главный редактор: Шелепов В.Ю.</p>
+
+<p class="footer">
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=90090525&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/90090525/3_0_2069A5FF_004985FF_1_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="90090525" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Rating Mail.ru logo -->
+<a href="https://top.mail.ru/jump?from=3259293">
+<img src="https://top-fwz1.mail.ru/counter?id=3259293;t=456;l=1" style="border:0;" height="31" width="88" alt="Top.Mail.Ru" /></a>
+<!-- //Rating Mail.ru logo -->
+</p>
+
+
+<p class="footer">&copy; ФГБНУ "Институт проблем искусственного интеллекта", </li>
+<script>document.write(new Date().getFullYear());</script></p>
+<br>
+</tr>
+
+</table>
+</body >
+</html>

@@ -1,0 +1,286 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<meta name = "description" content = "Problems of Artificial Intelligence №2023'3(30)">
+ 	<meta name="Keywords" content="Problems of artificial intelligence No.2023'3(30), Problems of artificial intelligence, international peer-reviewed scientific and theoretical journal, DNR, 
+                                   scientific journal, State Institution Institute of Artificial Intelligence Problems, GU IPII"> 
+
+ 	
+ 	<meta name = "robots" content = "index,follow">
+	
+	<link href="../../style_pai.css" rel="stylesheet" type="text/css">	
+	<link rel="SHORTCUT ICON" href="../../image_pai/favicon.ico" type="image/x-icon">	
+
+    <script src="../../javascript.js"></script>
+
+
+
+      <title>ABOUT NEURAL ARCHITECTURES OF FEATURE EXTRACTION FOR THE PROBLEM OF OBJECT RECOGNITION ON DEVICES WITH LIMITED COMPUTING POWER - Ya. S. Pikalyov, T. V. Yermolenko.</title>
+  
+      <meta name="description" content="ABOUT NEURAL ARCHITECTURES OF FEATURE EXTRACTION FOR THE PROBLEM OF OBJECT RECOGNITION ON DEVICES WITH LIMITED COMPUTING POWER - Ya. S. Pikalyov, T. V. Yermolenko." data-react-helmet="true" />
+  
+                <link rel="schema.DC" href="https://purl.org/dc/elements/1.1/"/>
+                                <meta name="keywords" content="компьютерное зрение, обнаружение объектов, базовые сети, глубокое обучение, кластеризация, устройства с ограниченной вычислительной мощностью,computer vision, object detection, backbone networks, deep learning, clusterisation, edge devices"/>
+                                  <meta name="description" content="ДThis work is devoted to the study of the effectiveness of various neural network models in the tasks of object detection and classification on devices with limited computing power. The authors use a two-step approach based on the Faster R-CNN architecture to detect an object in an image and recognize it. The basic network is the main block in the Faster R-CNN structure that affects the quality and performance of the entire system. The paper presents the results of numerical studies of the effectiveness of various network architectures according to criteria such as the separating ability of high-level features, clas-sification accuracy, the amount of RAM occupied, computational complexity. An integral assessment of the effectiveness of the models is proposed, taking into account the above criteria. The best value according to the integral criterion was shown by the hybrid network EdgeNeXt-S, which indicates a good balance of this model between performance, robustness and accuracy in computer systems"/>
+                                  <meta name="DC.Subject" content="компьютерное зрение"/>
+                                  <meta name="DC.Subject" content="обнаружение объектов"/>
+                                  <meta name="DC.Subject" content="базовые сети"/>
+                                  <meta name="DC.Subject" content="глубокое обучение"/>
+                                  <meta name="DC.Subject" content="кластеризация"/>
+				  <meta name="DC.Subject" content="устройства с ограниченной вычислительноймощностью"/>
+                                  <meta name="DC.Subject" content="computer vision"/>
+                                  <meta name="DC.Subject" content="object detection"/>
+                                  <meta name="DC.Subject" content="backbone networks"/>
+                                  <meta name="DC.Subject" content="deep learning"/>
+                                  <meta name="DC.Subject" content="clusterisation"/>
+                                  <meta name="DC.Subject" content="edge devices"/>
+                                  <meta name="DC.Creator.PersonalName" xml="lang=&quot;ru&quot;" content="Пикалёв Я.С. "/>
+                                  <meta name="DC.Creator.PersonalName" xml="lang=&quot;ru&quot;" content="Ермоленко Т.В."/>
+                                  <meta name="DC.Creator.PersonalName" xml="lang=&quot;en&quot;" content="Ya.S. Pikalyov "/>
+                                  <meta name="DC.Creator.PersonalName" xml="lang=&quot;en&quot;" content="T.V. Yermolenko "/>
+                                  <meta name="DC.Description" xml="lang=&quot;ru&quot;" content="Данная работа посвящена исследованию эффективности различных моделей нейронных сетей в задачах обнаружения объектов и их классификации на устройствах с ограниченной вычислительной мощностью. Авторы используют двухэтапный подход на базе архитектуры Faster R-CNN для обнаружения объекта на изображении и его распознавания. Основным блоком в структуре Faster R-CNN, влияющим на качество и производительность всей системы, является базовая сеть. В работе представлены результаты численных исследований эффективности различных сетевых архитектур по таким критериям как разделяющая способность высокоуровневых признаков, точность классификации, количество занимаемой оперативной памяти, вычислительная сложность. Предложена интегральная оценка эффективности моделей, учитывающая указанные выше критерии. Наилучшее значение по интегральному критерию показала гибридная сеть EdgeNeXt-S, что свидетельствует о хорошем балансе этой модели между производительностью, робастностью и точностью в системах компьютерного зрения."/>
+                                  <meta name="DC.Description" xml="lang=&quot;en&quot;" content="This work is devoted to the study of the effectiveness of various neural network models in the tasks of object detection and classification on devices with limited computing power. The authors use a two-step approach based on the Faster R-CNN architecture to detect an object in an image and recognize it. The basic network is the main block in the Faster R-CNN structure that affects the quality and performance of the entire system. The paper presents the results of numerical studies of the effectiveness of various network architectures according to criteria such as the separating ability of high-level features, classification accuracy, the amount of RAM occupied, computational complexity. An integral assessment of the effectiveness of the models is proposed, taking into account the above criteria. The best value according to the integral criterion was shown by the hybrid network EdgeNeXt-S, which indicates a good balance of this model between performance, robustness and accuracy in computer systems"/>
+                                  <meta name="DC.Source" content="Проблемы искусственного интеллекта"/>
+                                  <meta name="DC.Title" xml="lang=&quot;ru&quot;" content="О НЕЙРОННЫХ АРХИТЕКТУРАХ ИЗВЛЕЧЕНИЯ ПРИЗНАКОВ ДЛЯ ЗАДАЧИ РАСПОЗНАВАНИЯ ОБЪЕКТОВ НА УСТРОЙСТВАХ С ОГРАНИЧЕННОЙ ВЫЧИСЛИТЕЛЬНОЙ МОЩНОСТЬЮ"/>
+                                  <meta name="DC.Title" xml="lang=&quot;en&quot;" content="ABOUT NEURAL ARCHITECTURES OF FEATURE EXTRACTION FOR THE PROBLEM OF OBJECT RECOGNITION ON DEVICES WITH LIMITED COMPUTING POWER"/>
+                                  <meta name="DC.Date.issued" content="2023-04-19"/>
+                                  <meta name="DC.Identifier.pageNumber" content=""/>
+                                  <meta name="DC.Identifier.DOI" content="10.34757/2413-7383.2023.30.3.004"/>
+                                  <meta name="DC.Identifier.URI" content=""/>
+                                  <meta name="DC.Identifier.Rights" content=""/>
+                                  <meta name="DC.Identifier.Rights" content=""/>
+                                  <meta name="DC.Source.ISSN" content="2413-7383"/>
+                                  <meta name="citation_title" content="ABOUT NEURAL ARCHITECTURES OF FEATURE EXTRACTION FOR THE PROBLEM OF OBJECT RECOGNITION ON DEVICES WITH LIMITED COMPUTING POWER"/>
+                                  <meta name="citation_publication_date" content="2023/04/19"/>
+                                  <meta name="citation_journal_title" content="Проблемы искусственного интеллекта"/>
+                                  <meta name="citation_doi" content="10.34757/2413-7383.2023.30.3.004"/>
+                                  <meta name="citation_issn" content="2413-7383"/>
+                                  <meta name="citation_pdf_url" content=""/>
+                                  <meta name="citation_pages" content=""/>
+                                  <meta name="citation_issue" content="№ 3 (30)"/>
+                                  <meta name="citation_author" content="Ya.S. Pikalyov"/>
+                                  <meta name="citation_author" content="T.V. Yermolenko"/>
+                                  <meta name="DC.Type" content="Text.Serial.Journal"/>
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   var z = null;m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(90090525, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/90090525" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+</head>
+
+<body >
+
+<!-- Rating Mail.ru counter -->
+<script type="text/javascript">
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "3259293", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "topmailru-code");
+</script><noscript><div>
+<img src="https://top-fwz1.mail.ru/counter?id=3259293;js=na" style="border:0;position:absolute;left:-9999px;" alt="Top.Mail.Ru" />
+</div></noscript>
+<!-- //Rating Mail.ru counter -->
+
+
+
+<table  >
+<tr>
+    <td rowspan="3" valign="top" width="200px"  height="225px"><a href="../news.html" ><img src="../../image_pai/logo.jpg"  alt="Логотип" class="logo" border="0"></a></td>
+    <td colspan="2"  align="right"  height="104px" ><img src="../../image_pai/top_en.jpg"  border="0"  ></td>
+</tr>
+
+<tr>
+<td align="right"  valign="bottom" style="padding: 5px;">
+<a href="../../ru/2023/3(30)-4.html"  class="language"><img src="../../image_pai/Russia.png" class="imgflag">РУС</a>
+<a href="3(30)-4.html" class="language"><img src="../../image_pai/United-Kingdom.png" class="imgflag">ENG</a>
+</td>
+
+<td  align="right"    valign="bottom"   height="70px"  border="0">
+	
+	
+</td>
+</tr>
+
+<tr>
+<td  colspan="2" bgcolor="#ffffff">
+<H1>ABOUT NEURAL ARCHITECTURES OF FEATURE EXTRACTION FOR THE PROBLEM OF OBJECT RECOGNITION ON DEVICES WITH LIMITED COMPUTING POWER</H1>
+</td>
+</tr>
+
+<tr>
+<td  bgcolor="#04005f"  align="right"  valign="top"   border="0">
+	
+
+	<p class="rmenu">About </p>
+	
+	<a href="../news.html" class="Link menu">News  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../aims-and-scope.html" class="Link menu">Aims and Scope  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../founder-and-publisher.html" class="Link menu">Founder and Publisher  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../editorial-board.html" class="Link menu">Editorial board  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../licensing-terms.html" class="Link menu">Licensing terms  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../privacy-statement.html" class="Link menu">Privacy Statement  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../plagiarism-policy.html" class="Link menu">Plagiarism policy  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../publication-ethics.html" class="Link menu">Publication ethics  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../archiving.html" class="Link menu">Archiving Policy <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../subscription.html" class="Link menu">Subscription  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+
+	<br>
+	<br>
+	<p class="rmenu">For Authors</p>
+	
+	<a href="../instructions.html" class="Link menu">Instructions for authors  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../reviewing-process.html" class="Link menu">Reviewing proccess  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../copyright-notice.html" class="Link menu">Copyright Notice  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../license-agreement.html" class="Link menu">License agreement  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<a href="../apc.html" class="Link menu">Article processing charges  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<br>
+	<br>	
+
+
+	<p class="rmenu">Archive</p>
+
+	<a href="../archive.html" class="Link menu">All issues  <img src="../../image_pai/marker_on.jpg"  border="0"></a><br>
+	<a href="../search.html" class="Link menu">Search  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+
+	<br>
+	<br>
+
+
+	<p class="rmenu">Contacts</p>
+
+	<a href="../contacts.html" class="Link menu">Contacts  <img src="../../image_pai/marker.jpg"  border="0"></a><br>
+	<br>
+	<br>
+
+	
+</td>
+
+
+
+
+
+<td colspan="2" align="justify"    valign="top"  bgcolor="#ffffff">
+<p ><b>Ya.S. Pikalyov </b> 
+<br>Federal State Scientific Institution «Institute of Problems of Artificial intelligence», c. Donetsk
+<br>Research interests: Digital signal processing, data analysis, pattern recognition, natural language processing, computer vision, machine learning, neural networks
+</p>
+
+<p ><b>T.V. Yermolenko</b> 
+<br>Federal State Educational Institution of Higher Education «Donetsk State University», Donetsk
+<br>Research interests: Digital signal processing, data analysis, discrete mathematics, theory of algorithms, pattern recognition, natural language processing, computer vision, machine learning, neural networks
+</p>
+
+<p>
+<a href="../../download_pai/2023_3/4_Пикалев_Ермоленко.pdf" target="_blank"><button>Download pdf</button></a>
+</p>
+<p>
+<b>UDC</b> 004.932.72<br>
+<b>DOI</b> <a HREF="https://search.rads-doi.org/project/13749/object/201186">10.34757/2413-7383.2023.30.3.004</a><br>
+<b>Language:</b>Russian<br>
+</p>
+<p>
+<b>Annotation: </b>This work is devoted to the study of the effectiveness of various neural network models in the tasks of object detection and classification on devices with limited computing power. The authors use a two-step approach based on the Faster R-CNN architecture to detect an object in an image and recognize it. The basic network is the main block in the Faster R-CNN structure that affects the quality and performance of the entire system. The paper presents the results of numerical studies of the effectiveness of various network architectures according to criteria such as the separating ability of high-level features, clas-sification accuracy, the amount of RAM occupied, computational complexity. An integral assessment of the effectiveness of the models is proposed, taking into account the above criteria. The best value according to the integral criterion was shown by the hybrid network EdgeNeXt-S, which indicates a good balance of this model between performance, robustness and accuracy in computer systems</p>
+<p>
+<b>Keywords:</b> computer vision, object detection, backbone networks, deep learning, clusterisation, edge devices.
+</p>
+<p>
+<b>References:</b>
+<br>1. Zuev V. M. Method for learning neural network for robot control/ V. M. Zuev, O.A. Butov, S.B.Ivanova, A.A.Nikitina, S.I. Ulanov. Problems of Artificial Intelligence. 2021. Vol. 2. № 21. P. 22-33. 
+<br>2. Pokintelitsa А.E. Problems and features of data reduction in autonomous robotic systems / A.E.Pokintilitsa. Problems of Artificial Intelligence. 2023. Vol. 1. № 28. P. 31-41.
+<br>3. Russakovsky O. ImageNet Large Scale Visual Recognition Challenge / O. Russakovsky, J. Deng, H. Su, J. Krause, S. Satheesh, S. Ma, Z. Huang, A. Karpathy, A. Khosla, M. Bernstein, A.C. Berg, L. Fei-Fei. International Journal of Computer Vision. 2015. Vol. 115. № 3. 
+<br>4. Woo S. ConvNeXt V2: Co-designing and Scaling ConvNets with Masked Autoencoders / S. Woo, S. Debnath, R. Hu, X. Chen, Z. Liu, I.S. Kweon, S. Xie. 2023. 
+<br>5. Ding M. DaViT: Dual Attention Vision Transformers / M. Ding, B. Xiao, N. Codella, P. Luo, J. Wang, L. Yuan. Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics). 2022. Vol. 13684 LNCS. 
+<br>6. Zhang H. ParC-Net: Position Aware Circular Convolution with Merits from ConvNets and Transformer / H. Zhang, W. Hu, X. Wang. Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics). 2022. Vol. 13686 LNCS.
+<br>7. Maaz M. EdgeNeXt: Efficiently Amalgamated CNN-Transformer Architecture for Mobile Vision Applications / M. Maaz, A. Shaker, H. Cholakkal, S. Khan, S.W. Zamir, R.M. Anwer, F. Shahbaz Khan. 2023. 
+<br>8. Li Y. EfficientFormer: Vision Transformers at MobileNet Speed / Y. Li, G. Yuan, Y. Wen, J. Hu, G. Evangelidis, S. Tulyakov, Y. Wang, J. Ren. 2022. 
+<br>9. Tan M. EfficientNetV2: Smaller Models and Faster Training / M. Tan, Q. V. Le. 2021. 
+<br>10. Wadekar S.N. MobileViTv3: Mobile-Friendly Vision Transformer with Simple and Effective Fusion of Local, Global and Input Features / S.N. Wadekar, A. Chaurasia. 2022. 
+<br>11. LiJ. Next-ViT: Next Generation Vision Transformer for Efficient Deployment in Realistic Industrial Scenarios/ J. Li, X. Xia, W. Li, H. Li, X. Wang, X. Xiao, R. Wang, M. Zheng, X. Pan. 2022. 
+<br>12. He K. Deep residual learning for image recognition / K. He, X. Zhang, S. Ren, J. Sun. Proceedings of the IEEE Computer Society Conference on Computer Vision and Pattern Recognition. 2016. Vol. 2016-December. 
+<br>13. Wu K. TinyViT: Fast Pretraining Distillation for Small Vision Transformers / K. Wu, J. Zhang, H. Peng, M. Liu, B. Xiao, J. Fu, L. Yuan. Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics). 2022. Vol. 13681 LNCS. 
+<br>14. Barbu A. ObjectNet: A large-scale bias-controlled dataset for pushing the limits of object recognition models / A. Barbu, D. Mayo, J. Alverio, W. Luo, C. Wang, D. Gutfreund, J. Tenenbaum, B. Katz. Advances in Neural Information Processing Systems. 2019. Vol. 32. 
+<br>15. Borji A. ObjectNet Dataset: Reanalysis and Correction / A. Borji. 2020. 
+<br>16. ZhongZ. Random Erasing Data Augmentation / Z. Zhong, L. Zheng, G. Kang, S. Li, Y. Yang. 2017. 
+<br>17. Krizhevsky A. Learning Multiple Layers of Features from Tiny Images / A. Krizhevsky. Science Department, University of Toronto, Tech. 2009. 
+<br>18. McInnes L. UMAP: Uniform Manifold Approximation and Projection / L. McInnes, J. Healy, N. Saul, L. Großberger. Journal of Open Source Software. 2018. Vol. 3. № 29. 
+<br>19. Coates A. Learning feature representations with K-means / A. Coates, A.Y. Ng. Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in Bioinformatics). 2012. Vol. 7700 LECTURE NO. 
+<br>20. Davies D.L. A Cluster Separation Measure / D.L. Davies, D.W. Bouldin. IEEE Transactions on Pattern Analysis and Machine Intelligence. 1979. Vol. PAMI-1. № 2. 
+<br>21. Chen X. Symbolic Discovery of Optimization Algorithms / X. Chen, C. Liang, D. Huang, E. Real, K. Wang, Y. Liu, H. Pham, X. Dong, T. Luong, C.-J. Hsieh, Y. Lu, Q. V. Le. 2023. 
+<br>22. Zhang M. Lookahead Optimizer: k steps forward, 1 step back / M. Zhang, J. Lucas, J. Ba, G.E. Hinton. Advances in Neural Information Processing Systems. 2019. P. 9593-9604.
+
+
+<p>
+<b>Issues: </b>3(30)'2023
+<br>
+<b>Section: </b>Informatics, Computer Engineering and Control
+<br>
+<b>Cite:</b>
+Pikalyov, Ya.S. ABOUT NEURAL ARCHITECTURES OF FEATURE EXTRACTION FOR THE PROBLEM OF OBJECT RECOGNITION ON DEVICES WITH LIMITED COMPUTING POWER // Ya.S. Pikalyov, T.V. Yermolenko // Проблемы искусственного интеллекта. - 2023. № 3 (30). - http://search.rads-doi.org/project/13749/object/201186 doi: 10.34757/2413-7383.2023.30.3.004
+</p>
+
+
+
+
+
+<br>   
+<p><a href="3(30).html"><button>back to issues 3(30)'2023</button></a></p>
+<br>
+
+</td>
+
+
+
+</tr>
+
+<tr>
+<td colspan="3"   height="236px"   class="tdbottom">
+<br><img src="../../image_pai/bottom_1_en.jpg"  border="0">
+<br>
+<p class="footer"><a href="http://guiaidn.ru" target="_blank" class="footer menu">Founder and publisher: State Institution «Institute of Problems of Artificial Intelligence»</a></p>
+<p class="footer">Address: 83048, Donetsk, Artema st.,118 </p>
+<p class="footer">Telefon: +7 (856) 311-72-01</p>
+<p class="footer">Editor-in-chief: V. Ju. Shelepov</p>
+
+<p class="footer">
+<!-- Yandex.Metrika informer -->
+<a href="https://metrika.yandex.ru/stat/?id=90090525&amp;from=informer"
+target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/90090525/3_0_2069A5FF_004985FF_1_pageviews"
+style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="90090525" data-lang="ru" /></a>
+<!-- /Yandex.Metrika informer -->
+
+<!-- Rating Mail.ru logo -->
+<a href="https://top.mail.ru/jump?from=3259293">
+<img src="https://top-fwz1.mail.ru/counter?id=3259293;t=456;l=1" style="border:0;" height="31" width="88" alt="Top.Mail.Ru" /></a>
+<!-- //Rating Mail.ru logo -->
+</p>
+
+
+<p class="footer">&copy; State Institution «Institute of Problems of Artificial Intelligence», </li>
+<script>document.write(new Date().getFullYear());</script></p>
+<br>
+</tr>
+
+</table>
+</body >
+</html>
